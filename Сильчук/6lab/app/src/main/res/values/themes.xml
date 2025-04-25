@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TouchControl" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowBackground">@color/white</item> <!-- Белый фон для всего окна -->
+        <item name="colorPrimary">@color/black</item> <!-- Основной цвет -->
+        <item name="colorOnPrimary">@color/white</item> <!-- Цвет текста на основном фоне -->
+    </style>
+
+    <style name="Theme.TouchControl" parent="Base.Theme.TouchControl" />
+</resources>
