@@ -1,0 +1,37 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable ic_minus
+drawable ic_plus
+id addToBasketCheckBox
+id cartLayout
+id cartListView
+id countTextView
+id footer
+id header
+id main
+id minusButton
+id nameProductTextView
+id openBasketButton
+id plusButton
+id priceProductTextView
+id productImageView
+id productsListView
+id selectedTextView
+id textView
+id totalPriceTextView
+layout activity_cart
+layout activity_main
+layout item_cart_layout
+layout item_layout
+mipmap ic_launcher
+mipmap ic_launcher_foreground
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.MiniShoplab2
+style Theme.MiniShoplab2
+xml backup_rules
+xml data_extraction_rules
