@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_share"
+        android:icon="@android:drawable/ic_menu_share"
+        android:title="Поделиться"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menu_view_file"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="Просмотреть файл"
+        app:showAsAction="always"/>
+</menu>

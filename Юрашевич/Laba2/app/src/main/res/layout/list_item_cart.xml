@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="30px">
+
+
+    <TextView
+        android:id="@+id/listItemId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="1"
+        android:textSize="48px"
+        android:textStyle="bold"
+        android:layout_gravity="center_vertical"/>
+
+    <ImageView
+        android:id="@+id/listItemImage"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:paddingLeft="10px"
+        android:paddingRight="10px"
+        android:src="@drawable/hat"
+        android:layout_gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/listItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:text="Шапка"
+        android:textSize="48px"
+        android:layout_gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/listItemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Цена: 100 BYN"
+        android:textSize="48px"
+        android:textStyle="bold"
+        android:layout_gravity="center_vertical"/>
+
+</LinearLayout>

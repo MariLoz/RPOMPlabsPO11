@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_marginBottom="4dp">
+
+    <android.gesture.GestureOverlayView
+        android:id="@+id/gesture_preview"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:gestureStrokeWidth="3"
+        android:fadeEnabled="false"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/gesture_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:textColor="@color/text_primary"
+        android:maxLines="2"/>
+
+    <ImageButton
+        android:id="@+id/delete_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_delete"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/delete_gesture"
+        android:layout_gravity="center"/>
+</LinearLayout>
