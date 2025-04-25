@@ -1,0 +1,25 @@
+<resources>
+    <!-- Основные тексты -->
+    <string name="app_name">TouchControl</string>
+    <string name="add_gesture">Добавить жест</string>
+    <string name="manage_gestures">Управление жестами</string>
+    <string name="result_placeholder">Результат: </string>
+    <string name="gesture_not_recognized">Жест не распознан</string>
+    <string name="failed_to_load_gestures">Не удалось загрузить жесты</string>
+    <string name="info_button_description">Информация о программе</string>
+    <string name="result">Результат: %s</string>
+
+    <!-- Тексты для диалога -->
+    <string name="about_program">О программе</string>
+    <string name="ok">OK</string>
+    <string name="program_info">
+        Лабораторная работа 16 (Работа 6 из УМК). Принципы работы c жестами вводимыми пользователями.
+        \n\nВыполнил: Сильчук Д.А.
+        \nПроверил: Козинский А.А.
+        \n\nЗадание:
+        \n- Разработка собственного СВЯЗНОГО набора жестов
+        \n- Представление в приложении дополнительной справочной информации (текст о назначении приложения)
+        \n- Вывод различных информационных сообщений после соответствующих жестов ПОЛЬЗОВАТЕЛЯ. Подготовка сценария управления приложением с помощью жестов пользователя
+        \n- Возможность навигации по приложению с помощью набора жестов пользователя
+    </string>
+</resources>

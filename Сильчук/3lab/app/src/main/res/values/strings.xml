@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyNotes</string>
+    <string name="tab_layout_description">Tab layout for navigation</string>
+</resources>

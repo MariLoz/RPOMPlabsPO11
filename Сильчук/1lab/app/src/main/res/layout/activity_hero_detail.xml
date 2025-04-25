@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Изображение героя -->
+    <ImageView
+        android:id="@+id/heroImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"/>
+
+    <!-- Имя героя -->
+    <TextView
+        android:id="@+id/heroNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Атрибут героя -->
+    <TextView
+        android:id="@+id/heroAttrTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/attribute_label"/>
+
+    <!-- Тип атаки героя -->
+    <TextView
+        android:id="@+id/heroAttackTypeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/attack_type_label"/>
+
+    <!-- Роли героя -->
+    <TextView
+        android:id="@+id/heroRolesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/roles_label"/>
+
+    <!-- Здоровье героя -->
+    <TextView
+        android:id="@+id/heroHealthTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/health_label"/>
+
+    <!-- Мана героя -->
+    <TextView
+        android:id="@+id/heroManaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/mana_label"/>
+
+    <!-- Броня героя -->
+    <TextView
+        android:id="@+id/heroArmorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/armor_label"/>
+
+    <!-- Скорость передвижения героя -->
+    <TextView
+        android:id="@+id/heroMoveSpeedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/move_speed_label"/>
+</LinearLayout>

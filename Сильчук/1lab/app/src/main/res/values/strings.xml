@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ListDisplay</string>
+    <string name="item_title_placeholder">Title</string>
+    <string name="item_description_placeholder">Description</string>
+    <string name="load_data">Загрузить данные (нажимает Сильчук)</string>
+    <string name="attribute_label">Атрибут: %1$s</string>
+    <string name="attack_type_label">Тип атаки: %1$s</string>
+    <string name="roles_label">Роли: %s</string>
+    <string name="health_label">Здоровье: %d</string>
+    <string name="mana_label">Мана: %d</string>
+    <string name="armor_label">Броня: %d</string>
+    <string name="move_speed_label">Скорость передвижения: %d</string>
+    <string name="menu_button_description">Меню</string>
+    <string name="about_task">О задаче</string>
+</resources>
