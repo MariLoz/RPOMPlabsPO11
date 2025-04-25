@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="30px">
+
+    <ImageView
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:src="@drawable/note"
+        android:layout_marginRight="30px"/>
+
+    <TextView
+        android:id="@+id/listItemId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="48px"
+        android:textStyle="bold"
+        android:layout_marginRight="20px" />
+
+    <TextView
+        android:id="@+id/listItemNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Заметка"
+        android:textSize="48px" />
+
+    <TextView
+        android:id="@+id/listItemCreatedAt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2023-10-01 12:00"
+        android:textSize="24px"
+        android:textStyle="italic"
+        android:layout_marginLeft="20px"/>
+</LinearLayout>

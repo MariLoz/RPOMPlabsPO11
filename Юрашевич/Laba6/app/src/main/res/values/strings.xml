@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Laba6 Yurashevich V.S.</string>
+    <string name="add_gesture">Добавить</string>
+    <string name="check">Проверить</string>
+    <string name="list_gestures">Список</string>
+    <string name="gesture_name_hint">Название жеста</string>
+    <string name="save_gesture">Сохранить</string>
+    <string name="about">О приложении</string>
+    <string name="delete_gesture">Удалить жест</string>
+    <string name="draw_gesture_hint">Нарисуйте жест</string>
+
+    <string name="about_app_text">
+        <b>Функции приложения:</b>\n\n
+        • Распознавание рукописных жестов\n
+        • Сохранение пользовательских жестов\n
+        • Просмотр библиотеки жестов\n\n
+        <b>Как использовать:</b>\n\n
+        1. Нарисуйте жест в области ввода\n
+        2. Нажмите \"Проверить\" для распознавания\n
+        3. Используйте \"Добавить\" для обучения\n
+        4. Используйте \"Список\" для просмотра библиотеки\n
+    </string>
+</resources>

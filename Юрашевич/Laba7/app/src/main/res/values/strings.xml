@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Laba7 Yurashevich V.S.</string>
+    <string name="help_title">Справка по приложению</string>
+    <string name="help_message">Сценарий работы:\n\n1. Выберите вкладку... (и т.д.)</string>
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Laba3 Yurashevich V.S.</string>
+    <string-array name="sort_options">
+        <item>По ID</item>
+        <item>По описанию</item>
+        <item>По дате создания</item>
+    </string-array>
+</resources>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Laba8 Yurashevich V.S.</string>
+    <string name="stats_title">Статистика</string>
+    <string name="stats_no_data">Нет данных о маршруте</string>
+</resources>
