@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".fragments.FragmentUpdate">
+
+    <EditText
+        android:id="@+id/noteId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Note id"
+        android:inputType="number"
+        android:ems="10"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/noteDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Note description"
+        android:inputType="text"
+        android:ems="10"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="169dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Update"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Разработал Гурин" />
+
+</LinearLayout>
