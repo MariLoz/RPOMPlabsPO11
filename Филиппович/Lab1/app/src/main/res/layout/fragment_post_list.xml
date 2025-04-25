@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/authorInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Разработала: Милана Филиппович Сергеевна\nГруппа: ПО-11"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:padding="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/prevPageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Назад"
+            android:enabled="false"/>
+
+        <TextView
+            android:id="@+id/pageIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Страница 1"
+            android:padding="8dp"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/nextPageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Вперед"/>
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/rowCountSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/row_count_options"
+        android:padding="8dp"/>
+
+    <Switch
+        android:id="@+id/viewToggleSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Переключить вид (Список/Сетка)"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

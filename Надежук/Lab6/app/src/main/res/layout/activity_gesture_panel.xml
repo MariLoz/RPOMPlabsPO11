@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    tools:context=".GesturePanelActivity"
+    android:id="@+id/mainR">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:background="@color/toolbarBackgroundColor"
+        android:elevation="2dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@color/white"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/info_of_recognized_gesture"/>
+
+    <TextView
+        android:id="@+id/info_of_recognized_gesture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:text="Введите число жестами"
+
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/count_of_gesture" />
+
+    <TextView
+        android:id="@+id/count_of_gesture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:padding="10dp"
+
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/list_of_gestures" />
+
+    <ListView
+        android:id="@+id/list_of_gestures"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:paddingBottom="20dp"
+
+        app:layout_constraintTop_toBottomOf="@id/count_of_gesture"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/gestureOverlay"/>
+
+    <android.gesture.GestureOverlayView
+        android:id="@+id/gestureOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/secondary"
+        android:gestureColor="@color/primary"
+        android:gestureStrokeType="multiple"
+
+        app:layout_constraintTop_toBottomOf="@id/list_of_gestures"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/check_button"/>
+
+    <Button
+        android:id="@+id/check_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/buttonBackgroundColor"
+        android:text="Проверить число (нажимает Надежук А. Г., группа ПО-11)"
+        android:textSize="10sp"
+
+        app:layout_constraintBottom_toTopOf="@id/authorName"
+        app:layout_constraintEnd_toStartOf="@id/add_gesture_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gestureOverlay" />
+
+    <Button
+        android:id="@+id/add_gesture_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Добавить жест (нажимает Надежук А. Г., группа ПО-11)"
+        android:backgroundTint="@color/buttonBackgroundColor"
+        android:textSize="10sp"
+
+        app:layout_constraintStart_toEndOf="@id/check_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/authorName"
+        app:layout_constraintTop_toBottomOf="@id/gestureOverlay"/>
+
+    <TextView
+        android:id="@+id/authorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="Разработал Надежук Артемий Геннадьевич"
+        android:paddingBottom="4dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_gesture_button"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

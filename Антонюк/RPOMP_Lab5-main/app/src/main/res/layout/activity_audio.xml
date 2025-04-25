@@ -1,0 +1,67 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="40dp"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFF6F0">
+
+    <!-- Заголовок "Сейчас играет" -->
+    <TextView
+        android:id="@+id/tvNowPlaying"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сейчас играет:"
+        android:textSize="20sp"
+        android:textColor="#FF4081"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- SeekBar для управления воспроизведением -->
+    <SeekBar
+        android:id="@+id/seekBarAudio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:progressTint="#FF4081" />
+
+    <!-- Кнопки управления -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <!-- Кнопка "Назад" -->
+        <Button
+            android:id="@+id/btnBackAudio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Назад"
+            android:backgroundTint="#FF4081"
+            android:textColor="#FFFFFF"
+            android:padding="16dp"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Кнопка "Воспроизвести/Пауза" -->
+        <Button
+            android:id="@+id/btnPlayPauseAudio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Воспроизвести"
+            android:backgroundTint="#FF4081"
+            android:textColor="#FFFFFF"
+            android:padding="16dp" />
+    </LinearLayout>
+
+    <!-- Разработчик -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Разработчик: Антонюк Н.А."
+        android:textColor="#88FF0404"
+        android:gravity="center"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

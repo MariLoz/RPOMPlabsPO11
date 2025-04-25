@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:src="@drawable/amd" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="173dp"
+            android:columnCount="3"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="142dp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:text="Vendor" />
+
+            <TextView
+                android:id="@+id/vendor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:text="AMD" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="92dp"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:text="Type" />
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:text="Processor" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:text="Median Score" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:text="Number of tests" />
+
+            <TextView
+                android:id="@+id/median"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:text="7777" />
+
+            <TextView
+                android:id="@+id/num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="4"
+                android:layout_column="1"
+                android:text="52" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="142dp"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:text="Full name of device" />
+
+            <TextView
+                android:id="@+id/fullname"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:text="TextView" />
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Developed by Turabov Andrey PO-11" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

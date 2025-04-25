@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@drawable/bg_gradient_dark"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+    <!-- Логотип приложения -->
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="@string/app_logo"/>
+
+    <!-- Заголовок -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="28sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"/>
+
+    <!-- Кнопка обучения - ЯРКИЙ КОНТРАСТНЫЙ КОНТУР -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/trainButton"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/train_button"
+        android:textSize="20sp"
+        android:textColor="#00E5FF"
+        android:layout_marginBottom="16dp"
+        android:drawablePadding="12dp"
+        app:strokeColor="#00E5FF"
+        app:strokeWidth="3dp"
+        app:cornerRadius="14dp"
+        app:rippleColor="#4000E5FF"
+        android:elevation="8dp"
+        android:translationZ="8dp"/>
+
+    <!-- Кнопка игры - ЯРКАЯ ЗАЛИВКА С ГРАДИЕНТОМ -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/playButton"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/play_button"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:drawablePadding="12dp"
+        app:cornerRadius="14dp"
+        app:rippleColor="#80FFFFFF"
+        android:elevation="12dp"
+        android:translationZ="12dp"/>
+
+    <!-- Версия приложения -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_version"
+        android:textColor="@color/white_60"
+        android:layout_marginTop="40dp"
+        android:textSize="12sp"/>
+
+</LinearLayout>

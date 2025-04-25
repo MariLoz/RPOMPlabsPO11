@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/screen_background"
+    android:gravity="center_horizontal">
+
+    <!-- Заголовок -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Работа с файлами"
+        android:textColor="@color/primary_text"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Основная кнопка в карточке -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:strokeColor="@color/card_stroke"
+        app:strokeWidth="1dp"
+        android:layout_marginBottom="24dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnChooseFile"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Выбрать файл"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:textColor="@color/primary"
+            app:icon="@drawable/ic_file_upload"
+            app:iconGravity="textStart"
+            app:iconPadding="16dp"
+            app:iconTint="@color/primary"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Подпись разработчика -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Разработал Филиппович М.С."
+        android:textColor="@color/secondary_text"
+        android:textSize="12sp"
+        android:layout_marginTop="32dp"/>
+</LinearLayout>

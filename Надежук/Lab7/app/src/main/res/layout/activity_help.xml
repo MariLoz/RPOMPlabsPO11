@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpActivity"
+    android:id="@+id/help">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Справка по приложению"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:paddingBottom="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="
+    1. Для воспроизведения аудио нажмите кнопку 'Аудио' и выберите файл.\n
+    2. Для просмотра видео нажмите кнопку 'Видео' и выберите файл.\n
+    3. Для просмотра изображений нажмите кнопку 'Изображение' и выберите файл.\n
+    4. Для съемки фото нажмите кнопку 'Сделать фото'.\n
+    5. Используйте кнопки управления для воспроизведения, паузы и остановки медиа.\n
+    6. Для масштабирования изображений используйте кнопки увеличения и уменьшения.\n
+    7. Для возврата в главное меню используйте кнопку 'Вернуться'."
+                android:justificationMode="inter_word"
+                android:textSize="15sp"
+                android:paddingTop="4dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

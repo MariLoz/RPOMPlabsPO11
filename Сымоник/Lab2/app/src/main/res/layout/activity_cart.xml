@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Заголовок "Корзина" -->
+    <TextView
+        android:id="@+id/cartTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Корзина товаров"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:paddingBottom="10dp"/>
+
+    <!-- ListView для отображения товаров в корзине -->
+    <ListView
+        android:id="@+id/cartListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"/>
+
+    <!-- Итоговая стоимость -->
+    <TextView
+        android:id="@+id/totalPriceText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Итого: 0.00 руб."
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="end"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+    <!-- Кнопка для завершения покупки -->
+    <Button
+        android:id="@+id/checkoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Оформить заказ"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Developed by Symonik I." />
+</LinearLayout>

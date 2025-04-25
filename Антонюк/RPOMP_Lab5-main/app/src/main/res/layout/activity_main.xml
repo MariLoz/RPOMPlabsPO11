@@ -1,0 +1,28 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="40dp"
+    android:padding="24dp"
+    android:background="#FFF6F0">
+
+    <!-- Кнопка "Выбрать файл" -->
+    <Button
+        android:id="@+id/btnChooseFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Выбрать файл"
+        android:backgroundTint="#FF4081"
+        android:textColor="#FFFFFF"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Разработчик -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Разработчик: Антонюк Н.А."
+        android:textColor="#88FF0404"
+        android:gravity="center" />
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFF6F0">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#FFF6F0"
+        android:layout_gravity="top"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Кнопка "Добавить жест" -->
+    <Button
+        android:id="@+id/add_gesture_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добавить жест"
+        android:backgroundTint="#FF4081"
+        android:textColor="#FFFFFF"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Текст "Введите число жестами" -->
+    <TextView
+        android:id="@+id/number_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Введите букву жестами"
+        android:textSize="24sp"
+        android:textColor="#FF4081"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Область для рисования жестов -->
+    <android.gesture.GestureOverlayView
+        android:id="@+id/gestureOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:gestureStrokeWidth="5.0"
+        android:gestureColor="#FF4081"
+        android:fadeEnabled="false"
+        android:background="@android:drawable/editbox_background"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Кнопка "Проверить число" -->
+    <Button
+        android:id="@+id/check_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Обработать букву"
+        android:backgroundTint="#FF4081"
+        android:textColor="#FFFFFF"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Имя разработчика -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Разработчик: Антонюк Н.А."
+        android:textColor="#88FF0404"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

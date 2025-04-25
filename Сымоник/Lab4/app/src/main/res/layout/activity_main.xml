@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Journal ID Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/journalIdInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Номер документа">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/journalIdEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:minHeight="48dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Download Button -->
+    <Button
+        android:id="@+id/downloadButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:drawablePadding="8dp"
+        android:onClick="downloadFile"
+        android:padding="12dp"
+        android:text="Загрузить"
+        android:textColor="@android:color/white"
+        />
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <!-- View and Delete Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+
+    </LinearLayout>
+
+
+    <!-- Status Text -->
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="4dp"
+        android:text=""
+        android:textColor="?attr/colorOnSurface"
+        android:textSize="12sp" />
+
+    <!-- History ListView -->
+    <ListView
+        android:id="@+id/historyListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1" />
+
+    <!-- Author Name -->
+    <TextView
+        android:id="@+id/authorName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:text="Developed by Symonik I."
+        android:textColor="?attr/colorOnSurface"
+        android:textSize="12sp" />
+
+</LinearLayout>

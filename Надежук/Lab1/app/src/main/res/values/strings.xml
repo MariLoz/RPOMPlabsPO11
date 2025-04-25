@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Lab1</string>
+    <string name="load_data_button_text">Загрузить данные (нажимает Надежук А.Г., группа ПО-11)</string>
+    <string name="author_app_name">Разработал Надежук Артемий Геннадьевич</string>
+
+    <string name="select_url_text">Выберите URL для загрузки данных:</string>
+    <string name="api_wot_radio_button_text">API World of Tanks</string>
+    <string name="file_github_radio_button_text">File from GitHub</string>
+    <string name="custom_url_radio_button_text">Указать свою URL</string>
+    <string name="url_edit_text_hint">Введите URL</string>
+    <string name="items_per_page_text">Количество объектов на странице:</string>
+    <string name="save_and_return_button_text">Сохранить и вернуться</string>
+
+    <string name="previous_page_description">Предыдущая страница</string>
+    <string name="next_page_description">Следующая страница</string>
+    <string name="page_number_format">Страница 0 из 0</string>
+
+    <string name="menu_open_file">Открыть файл</string>
+    <string name="menu_clear_list">Очистить список</string>
+    <string name="menu_download_file">Скачать файл</string>
+    <string name="menu_change_url">Настройки вывода</string>
+
+    <string name="tank_model_description">Модель танка</string>
+    <string name="tank_name_label">Имя танка: </string>
+    <string name="tank_nation_label">Нация: </string>
+    <string name="tank_level_label">Уровень: </string>
+    <string name="tank_type_label">Тип: </string>
+    <string name="tank_armor_label">Броня корпуса: </string>
+    <string name="tank_gun_label">Название пушки: </string>
+    <string name="tank_speed_label">Максимальная скорость: </string>
+    <string name="tank_cost_label">Стоимость:  </string>
+
+    <string name="tank_image_description">Изображение танка</string>
+    <string name="tank_name_placeholder">Модель танка</string>
+</resources>

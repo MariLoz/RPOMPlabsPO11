@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Виктор Хведорец ПО-11"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:textSize="18sp"
+        android:layout_below="@id/textView3"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/detailedDescriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"
+        android:layout_below="@id/descriptionTextView"
+        android:layout_marginTop="8dp" />
+
+    <!-- Кнопки сбоку внизу -->
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp">
+
+        <!-- Кнопка "Назад" -->
+        <Button
+            android:id="@+id/buttonBackToMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="На главную"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="20dp"/>
+
+
+        <Button
+            android:id="@+id/buttonBackward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Назад"
+            android:layout_toStartOf="@id/buttonForward"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="20dp"/>
+
+
+        <Button
+            android:id="@+id/buttonForward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Вперед"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

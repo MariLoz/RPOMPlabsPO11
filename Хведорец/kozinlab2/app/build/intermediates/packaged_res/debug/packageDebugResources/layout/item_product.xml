@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+
+    <ImageButton
+        android:id="@+id/buttonDelete"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/krest"
+        android:contentDescription="Delete"
+        android:visibility="gone"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8dp"
+        android:layout_marginEnd="6dp"/>
+
+    <!-- Основной контейнер -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_below="@id/buttonDelete">
+
+        <TextView
+            android:id="@+id/textViewProductId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID: 0"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="6dp"/>
+
+        <ImageView
+            android:id="@+id/imageViewProduct"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/minus"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Информация о товаре -->
+        <LinearLayout
+            android:layout_width="202dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Name"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/textViewPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$0.00"/>
+        </LinearLayout>
+
+        <!-- Кнопки изменения количества -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/buttonMinus"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/newminus"
+                android:layout_marginEnd="5dp" />
+
+            <TextView
+                android:id="@+id/textViewQuantity"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/buttonPlus"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/newplus"
+                android:layout_marginStart="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

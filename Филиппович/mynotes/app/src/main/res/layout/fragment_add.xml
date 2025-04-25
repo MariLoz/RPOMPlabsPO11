@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите описание"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:gravity="top|start" />
+
+    <Button
+        android:id="@+id/btnSelectImage"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="Выбрать изображение" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="1dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Selected Image"
+        android:scaleType="centerCrop"
+        android:src="@android:drawable/ic_menu_gallery" />
+
+    <Button
+        android:id="@+id/btnRecordAudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="Записать аудио" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="Сохранить заметку" />
+
+    <Button
+        android:id="@+id/btnPlayAudio"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:insetLeft="70dp"
+        android:insetRight="10dp"
+        android:text="Воспроизвести аудио" />
+
+
+</LinearLayout>

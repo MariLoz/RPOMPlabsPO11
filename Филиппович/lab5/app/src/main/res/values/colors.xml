@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#5D4037</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="grey_200">#EEEEEE</color>
+    <color name="grey_500">#9E9E9E</color>
+    <color name="screen_background">#F8F9FA</color>
+    <color name="primary">#5D4037</color>
+    <color name="primary_text">#202124</color>
+    <color name="secondary_text">#5F6368</color>
+    <color name="card_stroke">#E0E0E0</color>
+</resources>

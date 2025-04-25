@@ -1,0 +1,8 @@
+<resources>
+    <color name="colorPrimary">#FF6B6B</color>
+    <color name="colorPrimaryDark">#FF8E8E</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_60">#99FFFFFF</color>
+    <color name="vibrant_cyan">#00E5FF</color>
+    <color name="vibrant_pink">#FF00E0</color>
+</resources>

@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFF6F0">
+
+    <!-- PreviewView для отображения камеры -->
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Горизонтальный LinearLayout для кнопок "Сделать снимок" и "Переключить камеру" -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnTakePhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сделать снимок"
+            android:backgroundTint="#FF4081"
+            android:textColor="#FFFFFF"
+            android:padding="16dp"
+            android:layout_marginEnd="16dp" />
+
+        <Button
+            android:id="@+id/btnSwitchCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Переключить камеру"
+            android:backgroundTint="#FF4081"
+            android:textColor="#FFFFFF"
+            android:padding="16dp" />
+    </LinearLayout>
+
+    <!-- Кнопка "Выбрать из галереи" -->
+    <Button
+        android:id="@+id/btnPickImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Выбрать из галереи"
+        android:backgroundTint="#FF4081"
+        android:textColor="#FFFFFF"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Имя разработчика -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Разработал: Антонюк Н. А."
+        android:textColor="#88FF0404"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Кнопка "Назад" -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Назад"
+        android:backgroundTint="#FF4081"
+        android:textColor="#FFFFFF"
+        android:padding="16dp"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

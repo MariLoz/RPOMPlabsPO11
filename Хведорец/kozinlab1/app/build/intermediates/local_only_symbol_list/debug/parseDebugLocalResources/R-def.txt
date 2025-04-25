@@ -1,0 +1,35 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id body
+id button
+id buttonBackToMain
+id buttonBackward
+id buttonContainer
+id buttonForward
+id buttonGrid
+id buttonLinear
+id descriptionTextView
+id detailedDescriptionTextView
+id imageView
+id imageViewItem
+id recyclerView
+id textView2
+id textView3
+id textViewDescription
+id title
+layout activity_detail
+layout activity_main
+layout item_layout
+layout item_post
+mipmap ic_launcher
+mipmap ic_launcher_foreground
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.Kozinlab1
+style Theme.Kozinlab1
+xml backup_rules
+xml data_extraction_rules

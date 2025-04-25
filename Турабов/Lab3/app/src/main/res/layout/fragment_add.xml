@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AddFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/add_note_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Title"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/add_note_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Author"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/add_note_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Task"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/add_note_sub1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Subtask 1"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/add_note_sub2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Subtask 2"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/add_note_sub3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Subtask 3"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/add_note_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Note" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Developed by Turabov Andrey PO-11" />
+    </LinearLayout>
+</FrameLayout>

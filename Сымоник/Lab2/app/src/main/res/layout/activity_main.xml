@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/container"
+android:layout_width="match_parent"
+android:layout_height="match_parent" >
+
+<!-- Header aligned to top -->
+<RelativeLayout
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:background="#AFA7EF"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="MiniShop (Developed by Symonik I.)"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+</RelativeLayout>
+
+<!-- Footer aligned to bottom -->
+    <LinearLayout
+    android:id="@+id/footer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="#AFA7EF"
+    android:gravity="center">
+
+
+    <TextView
+        android:id="@+id/footer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Количество: 0"
+        android:textSize="16sp"
+        android:layout_marginEnd="10dp" />
+
+    <Button
+        android:id="@+id/show_checked_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Перейти в корзину" />
+    </LinearLayout>
+
+<!-- Content below header and above footer -->
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_above="@id/footer"
+    android:layout_below="@id/header"
+
+   >
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        >
+
+        <Button
+            android:id="@+id/button_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Назад"
+            android:enabled="false"
+            android:layout_marginEnd="10dp"/>
+
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Вперед"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="toolbarBackgroundColor">#62639b</color>
+    <color name="buttonBackgroundColor">#62639b</color>
+
+
+    <color name="primary">#ffca28</color>
+    <color name="primaryLight" tools:keep="@color/primaryLight">#fffd61</color>
+    <color name="primaryDark" tools:keep="@color/primaryDark">#c79a00</color>
+    <color name="secondary">#37474f</color>
+    <color name="secondaryLight" tools:keep="@color/secondaryLight">#62727b</color>
+    <color name="secondaryDark" tools:keep="@color/secondaryDark">#102027</color>
+    <color name="primaryText" tools:keep="@color/primaryText">#000000</color>
+    <color name="secondaryText" tools:keep="@color/secondaryText">#ffffff</color>
+</resources>

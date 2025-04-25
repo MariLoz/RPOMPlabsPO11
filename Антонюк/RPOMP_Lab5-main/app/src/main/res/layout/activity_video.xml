@@ -1,0 +1,56 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="40dp"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- VideoView для отображения видео -->
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <!-- SeekBar для управления воспроизведением -->
+    <SeekBar
+        android:id="@+id/seekBarVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+    <!-- Текст "Сейчас воспроизводится" -->
+    <TextView
+        android:id="@+id/tvNowPlaying"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сейчас воспроизводится:"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Кнопка "Воспроизвести/Пауза" -->
+    <Button
+        android:id="@+id/btnPlayPauseVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Воспроизвести"
+        android:backgroundTint="#FF4081"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp" />
+
+    <!-- Кнопка "Назад" -->
+    <Button
+        android:id="@+id/btnBackVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Назад"
+        android:backgroundTint="#FF4081"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp" />
+
+    <!-- Разработчик -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Разработчик: Антонюк Н.А."/>
+</LinearLayout>

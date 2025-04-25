@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="@android:color/white"
+        android:paddingTop="24dp">
+
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Developed by Symonik I." />
+
+        <ImageView
+            android:id="@+id/detailThumbnailImageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Character Name"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/elementTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Element: "
+                android:textSize="18sp"
+                android:textColor="#555555"
+                android:layout_marginEnd="8dp"/>
+
+            <ImageView
+                android:id="@+id/elementImageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_launcher_background"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/rarityTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rarity: "
+                android:textSize="18sp"
+                android:textColor="#555555"/>
+
+            <ImageView
+                android:id="@+id/rarityImageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/ic_launcher_background"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/weaponTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weapon: "
+            android:textSize="18sp"
+            android:textColor="#555555"
+            android:layout_marginBottom="8dp" />
+
+
+        <TextView
+            android:id="@+id/regionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Region: "
+            android:textSize="18sp"
+            android:textColor="#555555"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:id="@+id/talentTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Talents"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Блок с талантами в одной строке -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <!-- Талант 1 -->
+                <TextView
+                    android:id="@+id/talentName1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="100dp"
+                    android:text="Talent 1"
+                    android:textSize="16sp"
+                    android:textColor="#555555"
+                    android:gravity="center"
+                    android:layout_marginEnd="16dp"/>
+
+                <!-- Талант 2 -->
+                <TextView
+                    android:id="@+id/talentName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="100dp"
+                    android:text="Talent 2"
+                    android:textSize="16sp"
+                    android:textColor="#555555"
+                    android:gravity="center"
+                    android:layout_marginEnd="16dp"/>
+
+                <!-- Талант 3 -->
+                <TextView
+                    android:id="@+id/talentName3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="100dp"
+                    android:text="Talent 3"
+                    android:textSize="16sp"
+                    android:textColor="#555555"
+                    android:gravity="center"
+                    android:layout_marginEnd="16dp"/>
+
+                <!-- Талант 4 -->
+                <TextView
+                    android:id="@+id/talentName4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="100dp"
+                    android:text="Talent 4"
+                    android:textSize="16sp"
+                    android:textColor="#555555"
+                    android:gravity="center"
+                    android:layout_marginEnd="16dp"/>
+
+                <!-- Талант 5 -->
+                <TextView
+                    android:id="@+id/talentName5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="100dp"
+                    android:text="Talent 5"
+                    android:textSize="16sp"
+                    android:textColor="#555555"
+                    android:gravity="center"
+                    android:layout_marginEnd="16dp"/>
+
+                <!-- Талант 6 -->
+                <TextView
+                    android:id="@+id/talentName6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="100dp"
+                    android:text="Talent 6"
+                    android:textSize="16sp"
+                    android:textColor="#555555"
+                    android:gravity="center"
+                    android:layout_marginEnd="16dp"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- Заголовок созвездий -->
+        <TextView
+            android:id="@+id/constellationTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Constellations"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Список созвездий -->
+        <LinearLayout
+            android:id="@+id/constellationList"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <!-- Созвездие 1 -->
+            <TextView
+                android:id="@+id/constellation1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Constellation 1"
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Созвездие 2 -->
+            <TextView
+                android:id="@+id/constellation2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Constellation 2"
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Созвездие 3 -->
+            <TextView
+                android:id="@+id/constellation3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Constellation 3"
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Созвездие 4 -->
+            <TextView
+                android:id="@+id/constellation4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Constellation 4"
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Созвездие 5 -->
+            <TextView
+                android:id="@+id/constellation5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Constellation 5"
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Созвездие 6 -->
+            <TextView
+                android:id="@+id/constellation6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Constellation 6"
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

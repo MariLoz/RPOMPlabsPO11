@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/bg_gradient_dark">
+
+    <!-- Заголовок -->
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Обучите жесты для цифр"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Поле ввода цифры -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:boxBackgroundMode="outline"
+        app:boxBackgroundColor="#20234A"
+        app:boxStrokeColor="#3D5AFE"
+        app:hintTextColor="#B0B0FF"
+        app:startIconTint="#3D5AFE">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/numberInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите цифру (0-9)"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/white"
+            android:textColorHint="#B0B0FF"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Подсказка -->
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Нарисуйте жест для этой цифры:"
+        android:textSize="16sp"
+        android:textColor="#B0B0FF"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Область для рисования жестов -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:cardBackgroundColor="#20234A"
+        app:cardCornerRadius="16dp"
+        app:strokeColor="#3D5AFE"
+        app:strokeWidth="1dp"
+        app:cardElevation="4dp">
+
+        <android.gesture.GestureOverlayView
+            android:id="@+id/gestureOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gesture_area_bg"
+            android:gestureStrokeType="multiple"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Кнопка сохранения -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/saveButton"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Сохранить жест"
+        android:textSize="18sp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#3D5AFE"
+        android:textColor="@color/white"
+        app:cornerRadius="12dp"
+        app:iconGravity="textStart"
+        app:iconPadding="12dp"
+        app:rippleColor="#4000E5FF"
+        android:elevation="8dp"/>
+
+    <!-- Версия приложения -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_version"
+        android:textColor="@color/white_60"
+        android:layout_marginTop="40dp"
+        android:textSize="12sp"/>
+</LinearLayout>

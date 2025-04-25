@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@drawable/bg_gradient_dark"
+    tools:context=".GameActivity">
+
+    <!-- Верхняя панель с информацией -->
+    <LinearLayout
+        android:id="@+id/infoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Заголовок сложности -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/app_version"
+            android:textColor="@color/white_60"
+            android:textSize="12sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/difficultyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginBottom="12dp"
+            app:strokeColor="@color/white"
+            app:strokeWidth="0.5dp"/>
+
+        <!-- Сообщение игры -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/messageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Панель статистики -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#25254B"
+            app:cardCornerRadius="16dp"
+            app:strokeColor="#3D5AFE"
+            app:strokeWidth="1dp"
+            android:layout_marginBottom="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="16dp">
+
+                <!-- Счетчик попыток -->
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/attemptsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#00E5FF"
+                    android:layout_marginEnd="24dp"
+                    android:drawablePadding="8dp"
+                    android:drawableTint="#00E5FF"/>
+
+                <!-- Таймер -->
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/timerText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#FF9100"
+                    android:drawablePadding="8dp"
+                    android:drawableTint="#FF9100"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+    <!-- Область для рисования жестов -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/infoLayout"
+        android:layout_above="@id/restartButton"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp">
+
+        <android.gesture.GestureOverlayView
+            android:id="@+id/gestureOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gesture_area_bg"
+            android:gestureStrokeType="multiple">
+
+            <com.example.lab6.ConfettiView
+                android:id="@+id/confettiView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible" />
+        </android.gesture.GestureOverlayView>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Кнопка перезапуска -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/restartButton"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:text="@string/restart_game"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#3D5AFE"
+        android:textColor="@color/white"
+        app:cornerRadius="12dp"
+        app:iconGravity="textStart"
+        app:iconPadding="8dp"
+        app:rippleColor="#40FFFFFF"
+        android:elevation="8dp"/>
+
+    <!-- Версия приложения -->
+
+    <!-- Анимация конфетти -->
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/progressTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Загрузка файла..."
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp"/>
+
+    <ProgressBar
+        android:id="@+id/popupProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/popupProgressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0%"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="8dp"/>
+</LinearLayout>

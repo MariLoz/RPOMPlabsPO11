@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:background="#62639b"
+        android:elevation="2dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@color/white"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/takePhotoButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Камера (нажимает Надежук А. Г., группа ПО-11)"
+            android:layout_marginStart="13dp"
+            android:layout_marginEnd="13dp"
+            android:onClick="clickOnTakePhotoButton"
+            android:backgroundTint="#62639b"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/imageButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/imageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Фото (нажимает Надежук А. Г., группа ПО-11)"
+            android:onClick="clickOnMultimediaButton"
+            android:backgroundTint="#62639b"
+            android:layout_marginStart="13dp"
+            android:layout_marginEnd="13dp"
+
+            app:layout_constraintTop_toBottomOf="@id/takePhotoButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/videoButton"/>
+
+        <Button
+            android:id="@+id/videoButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Видео (нажимает Надежук А. Г., группа ПО-11)"
+            android:onClick="clickOnMultimediaButton"
+            android:backgroundTint="#62639b"
+            android:layout_marginStart="13dp"
+            android:layout_marginEnd="13dp"
+
+            app:layout_constraintTop_toBottomOf="@id/imageButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/audioButton" />
+
+        <Button
+            android:id="@+id/audioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Аудио (нажимает Надежук А. Г., группа ПО-11)"
+            android:onClick="clickOnMultimediaButton"
+            android:backgroundTint="#62639b"
+            android:layout_marginStart="13dp"
+            android:layout_marginEnd="13dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/videoButton"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/authorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="Разработал Надежук Артемий Геннадьевич"
+        android:paddingBottom="4dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

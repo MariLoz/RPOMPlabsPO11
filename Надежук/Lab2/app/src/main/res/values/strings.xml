@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Lab2</string>
+    <string name="checked_items_count_text">Выбрано товаров: 0</string>
+    <string name="show_checked_items_button_text">Показать выбранные товары (нажимает Надежук А.Г., группа ПО-11)</string>
+    <string name="author_app_name">Разработал Надежук Артемий Геннадьевич</string>
+    <string name="product_image_description">Изображение продукта</string>
+    <string name="product_name_label">Название продукта: </string>
+    <string name="product_id_label">id: 0</string>
+    <string name="product_total_price_label">100 BYN</string>
+    <string name="product_price_label">100 BYN</string>
+    <string name="decrement_checked_products_button_image">Изображение кнопки уменьшения</string>
+    <string name="quantity_checked_products_text">1 шт.</string>
+    <string name="increment_checked_products_button_image">Изображение кнопки увеличения</string>
+    <string name="delete_checked_products_button_image">Изображение кнопки удаления</string>
+</resources>

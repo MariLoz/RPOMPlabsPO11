@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="#FFF6F0">
+
+    <TextView
+        android:id="@+id/textViewCartId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID: 0" />
+
+    <TextView
+        android:id="@+id/textViewCartName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Название продукта"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/textViewCartPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 BYN"
+        android:layout_marginTop="4dp" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    <item-->
+<!--        android:id="@+id/open_file"-->
+<!--        android:title="Открыть файл"/>-->
+    <item
+        android:id="@+id/saved_routes"
+        android:title="Сохранённые маршруты"/>
+    <item
+        android:id="@+id/clear_map"
+        android:title="Очистить карту"/>
+</menu>

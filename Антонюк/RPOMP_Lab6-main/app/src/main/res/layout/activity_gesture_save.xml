@@ -1,0 +1,40 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFF6F0">
+
+    <!-- Поле для ввода имени жеста -->
+    <EditText
+        android:id="@+id/gesture_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите имя жеста"
+        android:backgroundTint="#FF4081"
+        android:textColor="#000000"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Область для рисования жестов -->
+    <android.gesture.GestureOverlayView
+        android:id="@+id/gestureOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:gestureStrokeWidth="5"
+        android:gestureColor="#FF4081"
+        android:fadeEnabled="false"
+        android:background="@android:drawable/editbox_background"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Кнопка "Сохранить жест" -->
+    <Button
+        android:id="@+id/save_gesture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сохранить жест"
+        android:backgroundTint="#FF4081"
+        android:textColor="#FFFFFF"
+        android:padding="16dp" />
+</LinearLayout>

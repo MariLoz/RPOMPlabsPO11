@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Developed by Turabov Andrey PO-11" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="633dp"
+            android:scaleType="matrix" />
+
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/btnPrevious"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prev" />
+
+            <Button
+                android:id="@+id/btnRotateLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RotateL" />
+
+            <Button
+                android:id="@+id/btnRotateRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RotateR" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,5 @@
+com.example.kozinlab8.test.app-core-1.6.1-0 E:\grade_android\gradle-8.10.2\caches\8.10.2\transforms\544fa566c720daa7fde03e79b0059e94\transformed\core-1.6.1\res
+com.example.kozinlab8.test.app-androidTest-1 E:\kozinlab8\app\build\generated\res\resValues\androidTest\debug
+com.example.kozinlab8.test.app-mergeDebugAndroidTestResources-2 E:\kozinlab8\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.kozinlab8.test.app-mergeDebugAndroidTestResources-3 E:\kozinlab8\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.kozinlab8.test.app-debugAndroidTest-4 E:\kozinlab8\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

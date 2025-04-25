@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <EditText
+        android:id="@+id/editTextImagePath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите путь к изображению" />
+
+    <EditText
+        android:id="@+id/editTextId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите номер заметки"/>
+
+    <EditText
+        android:id="@+id/editTextNewNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите новый текст"/>
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Обновить"/>
+</LinearLayout>

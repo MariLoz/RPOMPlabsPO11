@@ -1,0 +1,51 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFF6F0">
+
+    <!-- Поле для ввода номера стартовой сетки -->
+    <EditText
+        android:id="@+id/editTextId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите номер стартовой сетки"
+        android:padding="16dp"
+        android:background="@android:drawable/editbox_background"
+        android:textColor="#000000"
+        android:textColorHint="#888888"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Поле для ввода имени гонщика -->
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите имя гонщика"
+        android:padding="16dp"
+        android:background="@android:drawable/editbox_background"
+        android:textColor="#000000"
+        android:textColorHint="#888888"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Кнопка "Обновить" -->
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Обновить"
+        android:backgroundTint="#FF4081"
+        android:textColor="#FFFFFF"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Разработчик -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Разработчик: Антонюк Н.А."
+        android:textColor="#88FF0404"
+        android:gravity="center" />
+</LinearLayout>

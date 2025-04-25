@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="5dp">
+
+    <!-- Название товара -->
+    <TextView
+        android:id="@+id/cartItemName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:text="Название товара"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"/>
+
+    <!-- Количество товара -->
+    <TextView
+        android:id="@+id/cartItemQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x1"
+        android:textSize="16sp"
+        android:layout_weight="1"
+        android:gravity="center"/>
+
+    <!-- Цена товара -->
+    <TextView
+        android:id="@+id/cartItemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100 руб."
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_weight="2"
+        android:gravity="end"
+        android:paddingEnd="8dp"/>
+
+</LinearLayout>

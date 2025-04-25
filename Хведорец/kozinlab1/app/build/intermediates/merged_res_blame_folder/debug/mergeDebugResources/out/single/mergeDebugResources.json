@@ -1,0 +1,102 @@
+[
+    {
+        "merged": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-debug-33:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-main-35:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-debug-33:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-main-35:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-debug-33:\\xml_backup_rules.xml.flat",
+        "source": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-main-35:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-debug-33:\\xml_data_extraction_rules.xml.flat",
+        "source": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-main-35:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-debug-33:\\layout_activity_detail.xml.flat",
+        "source": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-main-35:\\layout\\activity_detail.xml"
+    },
+    {
+        "merged": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-debug-33:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-main-35:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-debug-33:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-main-35:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-debug-33:\\layout_item_layout.xml.flat",
+        "source": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-main-35:\\layout\\item_layout.xml"
+    },
+    {
+        "merged": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-debug-33:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-main-35:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.kozinlab1.app-debug-33:/layout_item_post.xml.flat",
+        "source": "com.example.kozinlab1.app-main-35:/layout/item_post.xml"
+    },
+    {
+        "merged": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-debug-33:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-main-35:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-debug-33:\\mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-main-35:\\mipmap-mdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-debug-33:\\mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-main-35:\\mipmap-xxxhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-debug-33:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-main-35:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-debug-33:\\mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-main-35:\\mipmap-hdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-debug-33:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-main-35:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-debug-33:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-main-35:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-debug-33:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-main-35:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-debug-33:\\layout_activity_main.xml.flat",
+        "source": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-main-35:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-debug-33:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-main-35:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-debug-33:\\mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-main-35:\\mipmap-xhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-debug-33:\\mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-main-35:\\mipmap-xxhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-debug-33:\\drawable_ic_launcher_background.xml.flat",
+        "source": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-main-35:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-debug-33:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-main-35:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-debug-33:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "E:\\grade_android\\gradle-8.10.2\\daemon\\8.10.2\\com.example.kozinlab1.app-main-35:\\mipmap-xhdpi\\ic_launcher.webp"
+    }
+]

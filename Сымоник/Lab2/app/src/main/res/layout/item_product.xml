@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/product_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        android:layout_marginEnd="10dp" />
+
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Название"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Цена"
+        android:layout_marginEnd="10dp"
+        android:textSize="16sp" />
+
+    <!-- Кнопка уменьшения количества -->
+    <Button
+        android:id="@+id/button_minus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="0dp"
+        android:text="-"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:gravity="center" />
+
+    <!-- Количество -->
+    <TextView
+        android:id="@+id/product_quantity"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginHorizontal="5dp" />
+
+    <!-- Кнопка увеличения количества -->
+    <Button
+        android:id="@+id/button_plus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="0dp"
+        android:text="+"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:gravity="center" />
+</LinearLayout>

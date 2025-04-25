@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Spinner
+        android:id="@+id/gesture_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.gesture.GestureOverlayView
+        android:id="@+id/gestureOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:gestureStrokeWidth="5"
+        android:gestureColor="@android:color/holo_blue_dark"
+        android:fadeEnabled="false" />
+
+    <Button
+        android:id="@+id/save_gesture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сохранить жест" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Developed by Turabov Andrey PO-11" />
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="40dp"
+    android:background="#FFF6F0"
+    tools:context=".MainActivity">
+
+    <!-- ViewPager с вкладками -->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:drawable/editbox_background">
+
+        <!-- PagerTabStrip для отображения названий вкладок -->
+        <androidx.viewpager.widget.PagerTabStrip
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="#FF4081"
+            android:textColor="#FFFFFF" />
+    </androidx.viewpager.widget.ViewPager>
+</LinearLayout>

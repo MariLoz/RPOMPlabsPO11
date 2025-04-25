@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/journalIdEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Введите идентификатор журнала"
+        android:inputType="number"
+        android:minHeight="48dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/downloadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:onClick="downloadFile"
+        android:text="Загрузить (нажимает Надежук А. Г., группа ПО-11)"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/journalIdEditText" />
+
+    <Button
+        android:id="@+id/viewButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+
+        android:enabled="false"
+        android:onClick="openDownloadedFile"
+        android:text="Смотреть"
+
+        app:layout_constraintEnd_toStartOf="@+id/deleteButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/downloadButton" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:enabled="false"
+        android:onClick="deleteFile"
+        android:text="Удалить"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/viewButton"
+        app:layout_constraintTop_toBottomOf="@id/downloadButton" />
+
+    <Button
+        android:id="@+id/openPDFButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:onClick="openPDF"
+        android:text="Открыть PDF"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/statusTextView"
+        app:layout_constraintTop_toBottomOf="@id/viewButton" />
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Статус состояния"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/openPDFButton" />
+
+    <ListView
+        android:id="@+id/historyListView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+
+        app:layout_constraintBottom_toTopOf="@id/authorName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/statusTextView" />
+
+    <TextView
+        android:id="@+id/authorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="Разработал Надежук Артемий Геннадьевич"
+        android:paddingBottom="4dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/historyListView"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

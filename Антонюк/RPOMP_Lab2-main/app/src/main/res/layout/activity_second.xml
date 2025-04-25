@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFF6F0">
+
+    <!-- Список выбранных товаров -->
+    <ListView
+        android:id="@+id/listViewCart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:drawable/editbox_background"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="32dp"/>
+
+    <!-- Текстовые поля для подсчета элементов и суммы -->
+    <TextView
+        android:id="@+id/textViewCartCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выделено: 0"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textViewCartSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Итог: 0 BYN"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Кнопка возврата -->
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Назад"
+        android:backgroundTint="#FF4081"
+        android:textColor="#FFFFFF"
+        android:padding="16dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Разработчик -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Разработчик: Антонюк Н.А."
+        android:textColor="#88FF0404"
+        android:gravity="center"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

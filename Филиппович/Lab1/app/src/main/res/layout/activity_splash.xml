@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@android:color/black">
+
+    <!-- Иконка -->
+
+    <!-- Текст с названием лабораторной -->
+    <ImageView
+        android:layout_width="479dp"
+        android:layout_height="337dp"
+        android:contentDescription="Иконка"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Лабораторная №8"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:paddingTop="16dp"/>
+
+    <!-- Текст с твоими данными -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Разработала: Милана Филиппович Сергеевна\nГруппа: ПО-11"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:paddingTop="8dp"/>
+</LinearLayout>

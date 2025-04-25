@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFF6F0">
+
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:drawable/editbox_background"
+        android:padding="12dp"
+        android:layout_marginTop="22dp"/>
+
+    <TextView
+        android:id="@+id/textViewCreater"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Разработчик: Антонюк Н.А."
+        android:textColor="#88212020"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Кнопки перемещены вниз -->
+    <Button
+        android:id="@+id/buttonLoadData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Получить данные"
+        android:backgroundTint="#FF4081"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/buttonSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Настройки"
+        android:backgroundTint="#FF4081"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"
+        android:padding="16dp" />
+
+</LinearLayout>

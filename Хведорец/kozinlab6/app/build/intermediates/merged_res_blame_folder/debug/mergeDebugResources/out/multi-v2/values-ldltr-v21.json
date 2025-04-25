@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.kozinlab6.app-mergeDebugResources-38:/values-ldltr-v21/values-ldltr-v21.xml",
+            "map": [
+                {
+                    "source": "E:\\grade_android\\gradle-8.10.2\\caches\\8.10.2\\transforms\\5777c8e7123adee9aa5e7b270c371359\\transformed\\appcompat-1.7.0\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "112",
+                        "endOffsets": "163"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Угадайка</string>
+    <string name="restart_game">Новая игра</string>
+    <string name="easy_mode">Легкий уровень</string>
+    <string name="medium_mode">Средний уровень</string>
+    <string name="hard_mode">Сложный уровень</string>
+    <string name="guess_prompt">Нарисуйте цифру от 0 до 9</string>
+    <string name="win_message">Победа! Это было число %d</string>
+    <string name="lose_message">Игра окончена. Загаданное число: %d</string>
+    <string name="train_button">Обучить жестам</string>
+    <string name="play_button">Играть</string>
+    <string name="app_version">Версия 1.0. Разработано Сымоник И.</string>
+    <string name="app_logo">Логотип приложения</string>
+</resources>

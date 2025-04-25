@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- GestureOverlayView для рисования жестов -->
+    <android.gesture.GestureOverlayView
+        android:id="@+id/gestureOverlayView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gestureStrokeType="multiple"
+        android:eventsInterceptionEnabled="true"
+        android:orientation="vertical"/>
+
+    <!-- TextView для отображения результата -->
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Нарисуйте жест"
+        android:textSize="24sp"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Филиппович Милана/n ПО-11</string>
+
+    <!-- Define the post_image string resource -->
+    <string name="post_image">Post image</string>
+
+    <!-- Define the row count options -->
+    <string-array name="row_count_options">
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+</resources>
