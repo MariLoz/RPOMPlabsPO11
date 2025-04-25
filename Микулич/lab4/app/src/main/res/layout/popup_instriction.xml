@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/popup_background"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Это приложение позволяет скачивать и открывать PDF-файлы.\nВведите индекс файла и нажмите 'Скачать'.\nПосле загрузки файла нажмите 'Открыть'"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:paddingBottom="8dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxDoNotShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Больше не показывать"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ОК"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

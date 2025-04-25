@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:padding="16dp">
+
+    <!-- Кнопка "Справка" -->
+    <Button
+        android:id="@+id/btnHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Справка"
+        android:layout_gravity="end"
+        android:backgroundTint="@android:color/holo_blue_light"/>
+
+    <!-- Поле для ввода текста жестами -->
+    <EditText
+        android:id="@+id/textInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ввод текста жестами"
+        android:focusable="false"
+        android:background="@android:color/darker_gray"
+        android:textSize="18sp"
+        android:padding="10dp"/>
+
+    <!-- Область для ввода жестов с красной рамкой -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="8dp"
+        android:background="#BCBCBC"
+        android:padding="3dp"> <!-- Толщина рамки -->
+
+        <android.gesture.GestureOverlayView
+            android:id="@+id/gestureOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadeOffset="1000"
+            android:gestureColor="#00BEFA"
+            android:gestureStrokeWidth="5"
+            android:uncertainGestureColor="@android:color/holo_red_dark" />
+    </FrameLayout>
+
+    <!-- Список сохраненных сообщений -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/messagesList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
