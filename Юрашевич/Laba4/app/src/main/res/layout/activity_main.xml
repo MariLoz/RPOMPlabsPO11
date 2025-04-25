@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:background="@color/white">
+
+    <include
+        layout="@layout/header_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:id="@+id/etInput"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Введите URL PDF-файла"
+        android:layout_marginTop="30px"
+        android:layout_marginRight="20px"
+        android:layout_marginLeft="20px"/>
+
+    <Button
+        android:id="@+id/btnDownload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Скачать"
+        android:textSize="48px"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="20px"
+        android:backgroundTint="#FFEB3B"
+        android:layout_marginRight="20px"
+        android:layout_marginLeft="20px"
+        />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:backgroundTint="#4CAF50"
+        android:enabled="false"
+        android:text="Смотреть"
+        android:textSize="48px"
+        android:textStyle="bold"
+        android:layout_marginRight="20px"
+        android:layout_marginLeft="20px"/>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:backgroundTint="#E91E63"
+        android:enabled="false"
+        android:text="Удалить"
+        android:textSize="48px"
+        android:textStyle="bold"
+        android:layout_marginRight="20px"
+        android:layout_marginLeft="20px"/>
+
+    <Button
+        android:id="@+id/btnShowHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="20px"
+        android:text="Помощь?"
+        android:textSize="48px"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:backgroundTint="#FFEB3B"
+        android:layout_marginRight="20px"/>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добро пожаловать в приложение!"
+        android:textSize="36px"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\n\nЭто приложение позволяет:\n- Загружать PDF-файлы по указанному URL\n- Просматривать загруженные файлы\n- Удалять сохраненные PDF\n\nВведите URL PDF-файла в поле ввода и нажмите 'Скачать' для начала."
+        android:textSize="36px"/>
+
+    <CheckBox
+        android:id="@+id/dontShowAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Больше не показывать"
+        android:layout_marginTop="30px"
+        android:buttonTint="#FFEB3B"/>
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="42px"
+        android:layout_gravity="end"
+        android:layout_marginTop="30px"
+        android:backgroundTint="#FFEB3B"/>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/window_background"
+    android:padding="16dp"
+    android:id="@+id/creator">
+
+    <EditText
+        android:id="@+id/gesture_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/gesture_name_hint"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_secondary"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:inputType="textCapWords"/>
+
+    <android.gesture.GestureOverlayView
+        android:id="@+id/gesture_canvas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gestureStrokeWidth="6"
+        android:gestureColor="@color/gesture_color"
+        android:background="@color/primary_color"
+        android:fadeEnabled="false"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save_gesture"
+        android:background="@drawable/btn_default"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:minHeight="48dp"/>
+</LinearLayout>

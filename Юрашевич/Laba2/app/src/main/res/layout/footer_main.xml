@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="30px"
+    android:background="#038A50">
+
+
+    <Button
+        android:id="@+id/btnShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:backgroundTint="#215B2AFF"
+        android:text="Показать"
+        android:textSize="48px"
+        android:textStyle="bold"
+        android:textFontWeight="700" />
+
+    <TextView
+        android:id="@+id/goodsCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:text="Итоговое число товаров: 0"
+        android:textSize="48px"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:paddingLeft="15px"/>
+</LinearLayout>

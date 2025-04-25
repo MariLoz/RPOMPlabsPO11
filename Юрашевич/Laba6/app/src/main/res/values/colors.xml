@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Основные цвета приложения -->
+    <color name="primary_color">#2E7D32</color>       <!-- Основной зеленый -->
+    <color name="primary_dark">#1B5E20</color>        <!-- Темный зеленый -->
+    <color name="primary_light">#81C784</color>       <!-- Светлый зеленый -->
+    <color name="accent_color">#4CAF50</color>        <!-- Акцентный зеленый -->
+
+    <!-- Фоновые цвета -->
+    <color name="window_background">#FAFAFA</color>   <!-- Основной фон -->
+    <color name="light_background">#FFFFFF</color>    <!-- Белый фон -->
+    <color name="dark_background">#212121</color>     <!-- Темный фон -->
+
+    <!-- Текстовые цвета -->
+    <color name="text_primary">#212121</color>        <!-- Основной текст -->
+    <color name="text_secondary">#757575</color>      <!-- Вторичный текст -->
+    <color name="text_light">#FFFFFF</color>          <!-- Текст на темном фоне -->
+    <color name="text_hint">#BDBDBD</color>          <!-- Подсказки -->
+
+    <!-- Цвета интерфейса -->
+    <color name="gesture_color">#FFC107</color>       <!-- Цвет жестов (янтарный) -->
+    <color name="divider">#E0E0E0</color>            <!-- Разделители -->
+    <color name="error_color">#F44336</color>        <!-- Ошибки (красный) -->
+    <color name="success_color">#4CAF50</color>      <!-- Успех (зеленый) -->
+
+    <!-- Стандартные цвета -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- Цвета состояний -->
+    <color name="button_pressed">#1B5E20</color>     <!-- Нажатая кнопка -->
+    <color name="button_normal">#2E7D32</color>      <!-- Обычная кнопка -->
+</resources>
