@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Угадайка</string>
+    <string name="title_activity_main">Угадай число</string>
+    <string name="title_activity_gesture_training">Обучение жестам</string>
+    <string name="input_hint">Введите число жестами</string>
+    <string name="start_game">Начать игру</string>
+    <string name="train_gestures">Обучить жесты</string>
+    <string name="help">Помощь</string>
+    <string name="gesture_help_title">Справка по жестам</string>
+    <string name="gesture_help_text">
+        Жесты для управления:\n
+        0: Круг по часовой стрелке\n
+        1: Вертикальная линия сверху вниз\n
+        2: Полуовал сверху вправо и вниз\n
+        3: Два полукруга\n
+        4: Вертикальная линия с горизонтальной\n
+        5: Вертикальная линия с полукругом\n
+        6: Овал против часовой стрелки\n
+        7: Горизонтальная линия с диагональю\n
+        8: Два круга\n
+        9: Круг с хвостиком\n
+        S: Жест \"Стоп\" (буква S)\n
+        ?: Жест \"Помощь\" (вопросительный знак)\n
+        →: Жест \"Далее\" (стрелка вправо)\n
+        ←: Жест \"Назад\" (стрелка влево)\n\n
+        Для ввода числа нарисуйте цифры и завершите жестом \"S\"
+    </string>
+    <string name="win_message">Поздравляем! Вы угадали число %d!</string>
+    <string name="try_again">Попробовать еще раз</string>
+    <string name="exit">Выход</string>
+    <string name="gesture_name_hint">Имя жеста</string>
+    <string name="save_gesture">Сохранить жест(нажимает Янущик)</string>
+    <string name="gesture_saved">Жест сохранен!</string>
+</resources>

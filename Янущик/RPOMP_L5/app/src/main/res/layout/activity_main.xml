@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/gradient_background"> <!-- Градиентный фон -->
+
+    <Button
+        android:id="@+id/buttonAudio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Выбрать аудио"
+        android:onClick="onClFile"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="8dp"
+        android:elevation="4dp"
+        android:stateListAnimator="@null"/>
+
+    <Button
+        android:id="@+id/buttonVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Выбрать видео"
+        android:onClick="onClFile"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="8dp"
+        android:elevation="4dp"
+        android:stateListAnimator="@null"/>
+
+    <Button
+        android:id="@+id/buttonImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Выбрать изображение"
+        android:onClick="onClFile"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp"
+        android:elevation="4dp"
+        android:stateListAnimator="@null"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Разработал Янущик"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Контейнер, распределяющий элементы внутри -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- Видео должно растягиваться на всю доступную область -->
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:adjustViewBounds="true"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/myTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Видео от Я.Д.Д."
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Контейнер для кнопок управления видео -->
+    <LinearLayout
+        android:id="@+id/videoControls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:gravity="center"
+        android:padding="8dp"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/videoPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play"
+            android:onClick="onVideoPlay"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white"
+            android:layout_marginEnd="8dp"
+            android:elevation="4dp"
+            android:stateListAnimator="@null"/>
+
+        <Button
+            android:id="@+id/videoPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pause"
+            android:onClick="onVideoPause"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white"
+            android:layout_marginEnd="8dp"
+            android:elevation="4dp"
+            android:stateListAnimator="@null"/>
+
+        <Button
+            android:id="@+id/videoStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            android:onClick="onVideoStop"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white"
+            android:elevation="4dp"
+            android:stateListAnimator="@null"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:scaleType="centerInside"
+        android:layout_marginTop="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:id="@+id/audioControls"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play"
+            android:onClick="play"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white"
+            android:layout_marginEnd="8dp"
+            android:elevation="4dp"
+            android:stateListAnimator="@null"/>
+
+        <Button
+            android:id="@+id/pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pause"
+            android:onClick="pause"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white"
+            android:layout_marginEnd="8dp"
+            android:elevation="4dp"
+            android:stateListAnimator="@null"/>
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            android:onClick="stop"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white"
+            android:elevation="4dp"
+            android:stateListAnimator="@null"/>
+    </LinearLayout>
+
+</LinearLayout>

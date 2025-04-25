@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E1E1E"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/rgDownloadMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="16dp">
+
+        <RadioButton
+            android:id="@+id/rbNTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NTV"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#FFD1DC"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/rbCustomURL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Custom URL"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#FFD1DC" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Введите ID журнала"
+        android:textColor="#FFFFFF"
+
+        android:backgroundTint="#B2EBF2"
+        app:layout_constraintTop_toBottomOf="@id/rgDownloadMode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <Button
+        android:id="@+id/btnDownload"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Скачать(нажимает Янущик)"
+        android:textColor="#1E1E1E"
+        android:backgroundTint="#FFF9C4"
+        android:elevation="4dp"
+        app:layout_constraintTop_toBottomOf="@id/etInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Смотреть"
+        android:textColor="#1E1E1E"
+        android:backgroundTint="#B2EBF2"
+        android:elevation="4dp"
+        app:layout_constraintTop_toBottomOf="@id/btnDownload"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        android:enabled="false" />
+
+    <TextView
+        android:id="@+id/textViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Разработал Янущик"
+        android:textColor="#B2EBF2"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/btnDelete"/>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Удалить"
+        android:textColor="#1E1E1E"
+        android:backgroundTint="#FFD1DC"
+        android:elevation="4dp"
+        app:layout_constraintTop_toBottomOf="@id/btnView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        android:enabled="false" />
+
+    <Button
+        android:id="@+id/btnShowHint"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/rounded_button_background"
+        android:text="\?"
+        android:textColor="#d7c9ff"
+        android:backgroundTint="#FFF9C4"
+        android:textSize="20sp"
+        android:elevation="4dp"
+        android:stateListAnimator="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCustomPopup"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/rounded_button_background"
+        android:text="i"
+        android:textColor="#d7c9ff"
+        android:backgroundTint="#B2EBF2"
+        android:textSize="20sp"
+        android:elevation="4dp"
+        android:stateListAnimator="@null"
+        app:layout_constraintEnd_toStartOf="@id/btnShowHint"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

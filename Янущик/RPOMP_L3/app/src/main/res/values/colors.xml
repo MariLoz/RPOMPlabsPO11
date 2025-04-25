@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Основные цвета -->
+    <color name="primary">#BB86FC</color> <!-- Фиолетовый -->
+    <color name="primaryDark">#3700B3</color> <!-- Темно-фиолетовый -->
+    <color name="accent">#03DAC5</color> <!-- Бирюзовый -->
+    <color name="background">#121212</color> <!-- Темный фон -->
+    <color name="surface">#1E1E1E</color> <!-- Поверхность для карточек -->
+    <color name="textPrimary">#FFFFFF</color> <!-- Белый текст -->
+    <color name="textSecondary">#B3B3B3</color> <!-- Серый текст -->
+    <color name="cardBackground">#1E1E1E</color> <!-- Фон карточек -->
+    <color name="cardElevation">#000000</color> <!-- Тень для карточек -->
+</resources>
