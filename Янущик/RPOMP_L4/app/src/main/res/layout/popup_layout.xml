@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#2E2E2E"
+    android:backgroundTint="#2E2E2E">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Инструкция по использованию приложения:"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Введите ID журнала.\n2. Нажмите 'Скачать'.\n3. После загрузки используйте кнопки 'Смотреть' и 'Удалить'\n\nРазработал Янущик."
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="8dp" />
+
+    <CheckBox
+        android:id="@+id/dontShowAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Больше не показывать"
+        android:textColor="#FFFFFF"
+        android:buttonTint="#FFD1DC"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ОК"
+        android:textColor="#1E1E1E"
+        android:backgroundTint="#FFD1DC"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

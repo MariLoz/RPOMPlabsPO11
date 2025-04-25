@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/distanceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        android:background="#80000000"
+        android:textColor="#FFFFFF"
+        android:text="Дистанция: 0 м"
+        android:padding="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#80000000">
+
+        <Button
+            android:id="@+id/btnShowAll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Весь путь"
+            android:backgroundTint="#4CAF50"
+            android:onClick="onShowAllClick"/>
+
+        <Button
+            android:id="@+id/btnShowCustom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Выбрать период"
+            android:backgroundTint="#FF9800"
+            android:onClick="onShowCustomClick"/>
+
+        <Button
+            android:id="@+id/addMarkerButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Добавить метку"
+            android:backgroundTint="#2196F3"/>
+
+        <Button
+            android:id="@+id/btnShowMarkersList"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Список меток"
+            android:backgroundTint="#9C27B0"/>
+    </LinearLayout>
+</RelativeLayout>
