@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ListView
+        android:id="@+id/listViewNotesUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="359dp" />
+
+    <EditText
+        android:id="@+id/editTextUpdateId"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Введите ID заметки"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextUpdateName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Введите новое название" />
+
+    <EditText
+        android:id="@+id/editTextUpdateDescription"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Введите новое описание" />
+
+    <EditText
+        android:id="@+id/editTextUpdateImageUrl"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Введите новый URL изображения" />
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Изменить"/>
+
+    <Button
+        android:id="@+id/buttonRefreshUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Обновить список"/>
+
+</LinearLayout>
