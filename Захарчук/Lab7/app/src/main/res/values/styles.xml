@@ -1,0 +1,9 @@
+<resources>
+    <!-- Базовая тема приложения -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Настройка темы, если нужно -->
+        <item name="colorPrimary">@android:color/holo_blue_dark</item>
+        <item name="colorPrimaryDark">@android:color/holo_blue_bright</item>
+        <item name="colorAccent">@android:color/holo_orange_light</item>
+    </style>
+</resources>

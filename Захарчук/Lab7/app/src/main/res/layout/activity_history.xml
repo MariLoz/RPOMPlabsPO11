@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Признак 1: Текст с ФИО -->
+    <TextView
+        android:id="@+id/authorName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Автор: Захарчук Павел"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Заголовок -->
+    <TextView
+        android:id="@+id/historyTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="История действий"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Вкладки для переключения между медиа и фото -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btnMediaHistory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Медиа" />
+
+        <Button
+            android:id="@+id/btnPhotoHistory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Фото" />
+    </LinearLayout>
+
+    <!-- RecyclerView для отображения списка истории -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/historyRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:layout_marginTop="8dp" />
+
+    <!-- Кнопка возврата -->
+    <Button
+        android:id="@+id/bBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="Назад"
+        android:layout_marginTop="8dp" />
+
+    
+
+    <!-- Кнопки "О задаче" и "Нажимает Захарчук" -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/taskInfoButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="О задаче"
+            android:layout_marginEnd="4dp" />
+
+        <!-- Признак 2: Кнопка "Нажимает" -->
+        <Button
+            android:id="@+id/authorButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Нажимает Захарчук" />
+    </LinearLayout>
+<!-- Признак 3: Подпись "Разработал" -->
+    <TextView
+        android:id="@+id/authorCredit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Разработал Захарчук"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:layout_marginTop="8dp" />
+</LinearLayout>

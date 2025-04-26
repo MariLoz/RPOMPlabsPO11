@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    android:fitsSystemWindows="true">
+
+    <!-- Признак 1: Текст с ФИО -->
+    <TextView
+        android:id="@+id/authorName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Автор: Захарчук Павел"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- ImageView для отображения изображения -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:contentDescription="Просмотр изображения"
+        android:layout_marginTop="8dp" />
+
+    <!-- Кнопка возвращения на главное меню -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Вернуться в главное меню"
+        android:onClick="onBackToMain"
+        android:layout_marginTop="8dp" />
+
+        <!-- Кнопки "О задаче" и "Нажимает Захарчук" -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/taskInfoButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="О задаче"
+            android:layout_marginEnd="4dp" />
+
+        <!-- Признак 2: Кнопка "Нажимает" -->
+        <Button
+            android:id="@+id/authorButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Нажимает Захарчук" />
+    </LinearLayout>
+         <!-- Признак 3: Подпись "Разработал" -->
+    <TextView
+        android:id="@+id/authorCredit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Разработал Захарчук"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:layout_marginTop="8dp" />
+</LinearLayout>

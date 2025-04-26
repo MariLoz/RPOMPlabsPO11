@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Признак 1: Текст с ФИО -->
+        <TextView
+            android:id="@+id/authorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Автор: Захарчук Павел"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/detailImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Изображение элемента" />
+
+        <TextView
+            android:id="@+id/detailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/detailDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp" />
+
+        <!-- Признак 2: Кнопка "Нажимает " -->
+        <Button
+            android:id="@+id/authorButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Нажимает Захарчук"
+            android:layout_marginTop="16dp" />
+
+        <!-- Признак 3: Подпись "Разработал" -->
+        <TextView
+            android:id="@+id/authorCredit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Разработал Захарчук"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>
