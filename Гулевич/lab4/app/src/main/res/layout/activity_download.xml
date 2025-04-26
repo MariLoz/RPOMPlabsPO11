@@ -1,0 +1,30 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="#1E1E1E">
+
+    <!-- Поле для ввода идентификатора журнала -->
+    <EditText
+        android:id="@+id/journalId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        android:background="@android:drawable/editbox_background"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#BBBBBB"
+        android:layout_marginBottom="18dp" />
+
+    <!-- Кнопка "Скачать" -->
+    <Button
+        android:id="@+id/downloadButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Скачать"
+        android:backgroundTint="@drawable/rounded_button"
+        android:textColor="#FFFFFF"
+        android:padding="16dp" />
+</LinearLayout>
