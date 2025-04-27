@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Gesture Overlay Area -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tvOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Введите число с помощью жестов"
+            android:textSize="20sp" />
+
+        <android.gesture.GestureOverlayView
+            android:id="@+id/gestureOverlayView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <!-- Bottom Panel with Buttons and Text -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#3F51B5"
+        android:padding="8dp"
+        android:layout_gravity="bottom">
+
+    <!-- Horizontal layout for buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/taskButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Задание Жватель"
+            android:layout_margin="4dp" />
+
+        <Button
+            android:id="@+id/pressButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Нажимает Жватель"
+            android:layout_margin="4dp" />
+    </LinearLayout>
+
+    <!-- Author Text -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Жватель Станислав"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:paddingTop="4dp" />
+</LinearLayout>
+    </LinearLayout>

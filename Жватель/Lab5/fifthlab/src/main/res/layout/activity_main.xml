@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Существующие элементы ImageView и VideoView остаются без изменений -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="centerInside"
+        android:visibility="gone" />
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+    <!-- Добавляем кнопку с информацией о задании -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/infoButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Задание Жвателя" />
+
+    </LinearLayout>
+
+    <!-- Существующие кнопки для выбора файлов -->
+    <Button
+        android:id="@+id/buttonStorage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="----Option for Storage----"
+        android:onClick="toggleStorageOptions" />
+
+    <LinearLayout
+        android:id="@+id/storageOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!-- Существующие кнопки остаются без изменений -->
+        <Button
+            android:id="@+id/buttonImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Image from Storage"
+            android:onClick="onClFile" />
+
+        <Button
+            android:id="@+id/buttonAudio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Audio from Storage"
+            android:onClick="onClFile" />
+
+        <Button
+            android:id="@+id/buttonVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Video from Storage"
+            android:onClick="onClFile" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonSamples"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="----Option for Samples----"
+        android:onClick="toggleSampleOptions" />
+
+    <LinearLayout
+        android:id="@+id/sampleOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!-- Существующие кнопки остаются без изменений -->
+        <Button
+            android:id="@+id/buttonSampleImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Sample Image"
+            android:onClick="loadSampleFile" />
+
+        <Button
+            android:id="@+id/buttonSampleAudio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Sample Audio"
+            android:onClick="loadSampleFile" />
+
+        <Button
+            android:id="@+id/buttonSampleVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Sample Video"
+            android:onClick="loadSampleFile" />
+    </LinearLayout>
+
+    <!-- Кнопки управления воспроизведением -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Существующие кнопки остаются без изменений -->
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play"
+            android:enabled="false"
+            android:onClick="play" />
+
+        <Button
+            android:id="@+id/pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pause"
+            android:enabled="false"
+            android:onClick="pause" />
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            android:enabled="false"
+            android:onClick="stop" />
+    </LinearLayout>
+
+    <!-- Добавляем кнопку "Нажимает Жватель" -->
+    <Button
+        android:id="@+id/pressButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Нажимает Жватель"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Добавляем текст "Жватель Станислав" -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Жватель Станислав"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:paddingTop="8dp"/>
+
+</LinearLayout>
