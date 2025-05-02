@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">HeadphonesShop</string>
+    <string name="show_checked">Show Checked Items</string>
+    <string name="selected">Выбрано:</string>
+    <string name="developer">Разработал: Головач Илья</string>
+</resources>
