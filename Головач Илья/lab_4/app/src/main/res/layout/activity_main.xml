@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="40dp"
+    android:padding="16dp"
+    android:background="#FFF6F0">
+
+    <EditText
+        android:id="@+id/journalId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите идентификатор журнала" />
+
+    <Button
+        android:id="@+id/downloadButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ED9277"
+        android:text="Скачать" />
+
+    <Button
+        android:id="@+id/viewButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ED9277"
+        android:text="Просмотреть PDF"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textViewCreater"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Разработал: Головач И.А."
+        android:textColor=" #000000"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+</LinearLayout>
