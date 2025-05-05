@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8B9BF0"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DDDDDD"
+        android:backgroundTint="#3F51B5"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="SpideyShop\nГоловач Кирилл ПО-11"
+        android:textColor="#F4F1F1"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/cartBackButton"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:backgroundTint="#F44336"
+        android:padding="10dp"
+        android:text="Назад к Кириллу Головачу из ПО-11" />
+
+    <ListView
+        android:id="@+id/cartListView"
+        android:layout_width="match_parent"
+        android:layout_height="564dp"
+        android:background="#F8BFBF"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+    <TextView
+        android:id="@+id/totalSum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEEEEE"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Сумма: 0 руб."
+        android:textSize="18sp" />
+
+
+</LinearLayout>

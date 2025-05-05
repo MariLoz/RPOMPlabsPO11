@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="40dp"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btnBackImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Назад" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:scaleType="centerInside" />
+
+    <Button
+        android:id="@+id/btnZoomIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Увеличить" />
+
+    <Button
+        android:id="@+id/btnZoomOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Уменьшить" />
+</LinearLayout>

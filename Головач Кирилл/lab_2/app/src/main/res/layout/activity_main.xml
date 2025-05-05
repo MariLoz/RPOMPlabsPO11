@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8B9BF0"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="SpideyShop\nГоловач Кирилл ПО-11"
+        android:textColor="#F8F8F8"
+        android:textColorLink="#3F51B5"
+        android:textSize="18sp" />
+
+    <ListView
+        android:id="@+id/productListView"
+        android:layout_width="wrap_content"
+        android:layout_height="481dp"
+        android:layout_weight="1"
+        android:background="#F8BFBF" />
+
+    <TextView
+        android:id="@+id/selectedCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEEEEE"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Выбрано товаров: 0"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/showCartButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#F44336"
+        android:text="Перейти в корзину Кирилла Головача из ПО-11" />
+
+</LinearLayout>
