@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<osm-config>
+    <user-agent>MyOsmdroidApp/1.0</user-agent>
+    <cache-path>${externalFilesDir}/osmdroid</cache-path>
+    <tile-download-threads>2</tile-download-threads>
+    <tile-file-system-threads>2</tile-file-system-threads>
+</osm-config>

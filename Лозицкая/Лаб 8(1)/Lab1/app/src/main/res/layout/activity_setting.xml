@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/settingsUrl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="25dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/select_url_text"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <RadioGroup
+        android:id="@+id/urlRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/apiWorldOfTanksRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/api_wot_radio_button_text"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/fileFromGitHubRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/file_github_radio_button_text" />
+
+        <RadioButton
+            android:id="@+id/customRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/custom_url_radio_button_text" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/urlEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/url_edit_text_hint" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/items_per_page_text"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_marginBottom="8dp"/>
+
+    <Spinner
+        android:id="@+id/itemsPerPageSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_and_return_button_text"
+        android:onClick="saveChanges"/>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/open_file"
+        android:title="@string/menu_open_file"/>
+    <item
+        android:id="@+id/clear_list"
+        android:title="@string/menu_clear_list"/>
+    <item
+        android:id="@+id/download_file"
+        android:title="@string/menu_download_file"/>
+    <item
+        android:id="@+id/change_url"
+        android:title="@string/menu_change_url"/>
+</menu>

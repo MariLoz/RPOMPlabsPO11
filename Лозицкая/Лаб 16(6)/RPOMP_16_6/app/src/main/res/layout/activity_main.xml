@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="Главный экран"/>
+
+    <android.gesture.GestureOverlayView
+        android:id="@+id/gestureOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gestureStrokeType="multiple"
+        android:eventsInterceptionEnabled="true"
+        android:orientation="vertical"/>
+
+</RelativeLayout>
