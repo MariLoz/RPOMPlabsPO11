@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF6F0"
+    tools:context=".LabinfoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F2C5C5"
+        android:padding="16dp"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Имя разработчика -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingBottom="12dp"
+                android:text="Разработчик: Головач Кирилл Александрович ПО-11"
+                android:textColor="#88070000"
+                android:textSize="14sp" />
+
+            <!-- Заголовок -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="16dp"
+                android:text="Практическое задание"
+                android:textColor="#494747"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- Основной текст -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="8dp"
+                android:paddingTop="4dp"
+                android:text="Принципы работы c жестами, вводимыми пользователями:\n\n- Возможность создания своих жестов с сохранением их в память приложения."
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

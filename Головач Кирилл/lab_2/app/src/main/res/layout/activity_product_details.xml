@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8B9BF0"
+    android:orientation="vertical">
+
+    <!-- Кнопка назад -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:backgroundTint="#F44336"
+        android:padding="10dp"
+        android:text="Назад" />
+
+    <!-- Название товара -->
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#F8BFBF"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Название товара"
+        android:textSize="18sp" />
+
+    <!-- Изображение товара -->
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#8B9BF0"
+        android:scaleType="centerInside" />
+
+    <!-- Описание товара -->
+    <TextView
+        android:id="@+id/productDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F8BFBF"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:text="Описание"
+        android:textSize="16sp" />
+
+    <!-- Цена товара -->
+
+    <!-- Кнопка добавить в корзину -->
+
+    <TextView
+        android:id="@+id/productPrice"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="#F8BFBF"
+        android:gravity="center_horizontal"
+        android:text="Цена" />
+
+</LinearLayout>
