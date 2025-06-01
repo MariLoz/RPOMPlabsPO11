@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">lab8</string>
+    <string name="load_button">Загрузить</string>
+    <string name="countrys_list">Список</string>
+    <string name="text_url">Введите URL</string>
+    <string name="book">Image book</string>
+    <string name="back">Назад</string>
+    <string name="developer">Разработал: Головач Илья</string>
+</resources>
